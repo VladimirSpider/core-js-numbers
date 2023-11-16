@@ -235,7 +235,6 @@ function isPrime(n) {
     if (n % i === 0) answer = false;
   }
 
-  console.log('answer: ', answer);
   return answer;
 }
 
