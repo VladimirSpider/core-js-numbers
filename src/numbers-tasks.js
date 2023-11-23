@@ -481,8 +481,10 @@ function toPrecision(/* number, precision */) {
  * new Number(5) => 5
  * Number(-5)    => -5
  */
-function getNumberValue(/* number */) {
-  throw new Error('Not implemented');
+function getNumberValue(number) {
+  // throw new Error('Not implemented');
+  if (typeof number === 'object') return number.valueOf();
+  return number;
 }
 
 /**
