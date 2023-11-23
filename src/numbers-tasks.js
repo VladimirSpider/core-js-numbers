@@ -467,8 +467,12 @@ function toFixed(number, fractionDigits) {
  * 12345, 7    => '12345.00'
  * 12.345, 4   => '12.35'
  */
-function toPrecision(/* number, precision */) {
-  throw new Error('Not implemented');
+function toPrecision(number, precision) {
+  // throw new Error('Not implemented');
+  const hN = String(number).length - precision;
+  console.log(number.toFixed(Math.abs(hN)));
+  console.log(typeof number.toFixed(Math.abs(hN)));
+  return number.toFixed(Math.abs(hN));
 }
 
 /**
