@@ -577,8 +577,9 @@ function isSafeInteger(/* number */) {
  * 5.9  => 5
  * -5.1 => -6
  */
-function roundToSmallestInteger(/* number */) {
-  throw new Error('Not implemented');
+function roundToSmallestInteger(number) {
+  // throw new Error('Not implemented');
+  return Math.floor(number);
 }
 
 /**
