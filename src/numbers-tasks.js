@@ -669,8 +669,13 @@ function getMaxNumber(/* firstNumber, secondNumber */) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
+function getRandomInteger(min, max) {
+  // throw new Error('Not implemented');
+  let helpNumber;
+  if (min >= 0) helpNumber = max + 1 - min;
+  if (min < 0) helpNumber = max + 1 + min;
+  const randomNumber = min + Math.random() * helpNumber;
+  return Math.floor(randomNumber);
 }
 
 /**
