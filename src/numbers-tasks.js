@@ -470,8 +470,8 @@ function toFixed(number, fractionDigits) {
 function toPrecision(number, precision) {
   // throw new Error('Not implemented');
   const hN = String(number).length - precision;
-  console.log(number.toFixed(Math.abs(hN)));
-  console.log(typeof number.toFixed(Math.abs(hN)));
+  // console.log(number.toFixed(Math.abs(hN)));
+  // console.log(typeof number.toFixed(Math.abs(hN)));
   return number.toFixed(Math.abs(hN));
 }
 
